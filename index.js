@@ -15,6 +15,9 @@ if (portArg !== undefined && !Number.isNaN(parseInt(portArg, 10))) {
 //Habilitar pug
 app.set('view engine','pug');
 
+//Definir la carpeta publica
+app.use(express.static('public'));
+
 //Agrega router
 //use soporta todos los tipos de peticiones como POST, GET, DELETE, etc.
 app.use('/',router);
