@@ -19,9 +19,8 @@ app.set('view engine','pug');
 
 app.use((req,res,next)=>{
   const year = new Date();
-
   res.locals.actualYear = year.getFullYear();
-  return next();
+  res.locals.nombreSitio = "Agencia De Viajes";
 });
 
 //Definir la carpeta publica
