@@ -5,29 +5,27 @@ const router = express.Router();
 
 //req - lo que enviamos: res = lo que express nos responde
 router.get('/',(req,res)=>{ 
-
-    
     res.render('inicio',{
         pagina: 'Inicio'    
     });
-})
+});
 
 router.get('/nosotros',(req,res)=>{ 
     res.render('nosotros',{
-        pagina: "Nosotros"
-    })
-})
+        pagina: 'Nosotros'
+    });
+});
 
 router.get('/viajes',(req,res)=>{ 
     res.render('viajes',{
-        pagina: "Viajes"
-    })
-})
+        pagina: 'Viajes'
+    });
+});
 
 router.get('/testimoniales',(req,res)=>{ 
     res.render('testimoniales',{
-        pagina: "Testimoniales"
-    })
-})
+        pagina: 'Testimoniales'
+    });
+});
 
 export default router;
