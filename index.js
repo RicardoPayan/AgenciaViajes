@@ -20,12 +20,8 @@ app.set('view engine','pug');
 app.use((req,res,next)=>{
   const year = new Date();
   res.locals.actualYear = year.getFullYear();
-<<<<<<< HEAD
-  res.locals.nombreSitio = "Agencia De Viajes";
-=======
   res.locals.nombresitio = "Agencia de Viajes";
   return next();
->>>>>>> temp-branch
 });
 
 //Definir la carpeta publica
